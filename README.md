@@ -15,7 +15,7 @@ Vou adicionar a sequencia de comandos para instalação do `zsh`, mas em caso de
  
 
 ```bash
-# install zsh via apt/ubuntu
+# install zsh via apt (destribuições debian)
 sudo apt install zsh 
 
 # zsh como shell padrão
