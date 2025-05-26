@@ -2,11 +2,13 @@
 
 # 1. Escolher arquivo ou pasta
 
-TARGET=$(find . -type f -o -type d | fzf    --preview='batcat --color=always {}' \
-  --prompt="Escolha um arquivo ou pasta: " \
-  --border --padding=1,2 \
-  --border-label='Filtro de Arquivo e Pasta' \
-  --color='border:#aaaaaa,label:#cccccc' \
+TARGET=$(find . \( -type f -o -type d \) 2>/dev/null | \
+  fzf \
+    --preview='batcat --color=always {} || ls --color=always {}' \
+    --prompt="Escolha um arquivo ou pasta: " \
+    --border --padding=1,2 \
+    --border-label='Filtro de Arquivo e Pasta' \
+    --color='border:#aaaaaa,label:#cccccc'
 )
 
 # Cancelar se não selecionado
