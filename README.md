@@ -162,7 +162,7 @@ map ctrl+shift+p launch --type=overlay sh -c "$HOME/fzf.sh"
 
 Arquivo de configuração do tema:
 ```bash
-./config/nvim/lua/plugins/colorscheme.lua > return {
+vim ./config/nvim/lua/plugins/colorscheme.lua > return {
   -- Instala o tema Oxocarbon
   { "nyoom-engineering/oxocarbon.nvim" },
 
