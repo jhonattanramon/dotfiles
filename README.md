@@ -173,8 +173,7 @@ vim ./config/nvim/lua/plugins/colorscheme.lua > return {
       colorscheme = "oxocarbon",
     },
   },
-}
-~       
+}       
 ```
 
 
