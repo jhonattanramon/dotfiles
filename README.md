@@ -158,29 +158,6 @@ após a criação do arquivo vamos definir um atalho no kitty para executar o `F
 map ctrl+shift+p launch --type=overlay sh -c "$HOME/fzf.sh"
 ```
 
-# LAZYVIM
-
-Arquivo de configuração do tema:
-```bash
-vim ~/.config/nvim/lua/plugins/colorscheme.lua
-
-
-// cole o seguinte script
- return {
-  -- Instala o tema Oxocarbon
-  { "nyoom-engineering/oxocarbon.nvim" },
-
-  -- Configura o LazyVim para usar o Oxocarbon
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "oxocarbon",
-    },
-  },
-}       
-```
-
-
 # DOCKER
 
 > vou deixar a sequencia de comandos para instalação do docker no ubuntu, mas se você  não sabe o que está fazendo recomendo ir para a [documentação](https://docs.docker.com/engine/install/ubuntu/) e antes de executar qualquer comando.
@@ -207,4 +184,27 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 #verify docker is installed
 sudo docker run hello-world
 
+```
+
+
+# LAZYVIM
+
+Arquivo de configuração do tema:
+```bash
+vim ~/.config/nvim/lua/plugins/colorscheme.lua
+
+
+// cole o seguinte script
+ return {
+  -- Instala o tema Oxocarbon
+  { "nyoom-engineering/oxocarbon.nvim" },
+
+  -- Configura o LazyVim para usar o Oxocarbon
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "oxocarbon",
+    },
+  },
+}       
 ```
